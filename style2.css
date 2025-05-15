@@ -1,0 +1,122 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("glow meteor shower GIF by Erica Anderson.gif") repeat;
+  background-size: 800px;
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.form-container {
+  width: 90%;
+  max-width: 500px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #00bfff;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow:
+    0 0 20px rgba(0, 191, 255, 0.5),
+    0 0 30px rgba(0, 191, 255, 0.3),
+    inset 0 0 10px rgba(0, 191, 255, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-align: center;
+}
+
+.form-container:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 0 30px rgba(0, 191, 255, 0.7),
+    0 0 60px rgba(0, 191, 255, 0.5),
+    inset 0 0 20px rgba(0, 191, 255, 0.3);
+}
+
+.form-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #00bfff;
+  text-shadow: 0 0 10px rgba(0, 191, 255, 0.6);
+}
+
+.form-container p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.input-field {
+  padding: 14px 18px;
+  border: 2px solid #00bfff;
+  border-radius: 12px;
+  font-size: 1em;
+  background-color: #111;
+  color: #fff;
+  box-shadow: inset 0 0 5px rgba(0, 191, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #00ffff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.6), inset 0 0 8px rgba(0, 255, 255, 0.3);
+}
+
+textarea.input-field {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.submit-btn {
+  padding: 16px 24px;
+  background: linear-gradient(135deg, #00bfff, #008fff);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #00bfff;
+}
+
+.submit-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00ffff;
+  background: linear-gradient(135deg, #008fff, #00bfff);
+}
+
+.submit-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 12px #00bfff;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: 2px solid #00bfff;
+  background: transparent;
+  color: #00bfff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #00bfff;
+  color: #fff;
+  box-shadow: 0 0 10px #00bfff;
+}

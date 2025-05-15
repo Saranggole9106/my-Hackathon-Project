@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - HackITM 2025</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Team Registration - HackITM 2025</h2>
+    <p>Please fill out the details to register your team.</p>
+
+    <form onsubmit="submitForm(event)">
+      <input type="text" class="input-field" placeholder="Team Name" required>
+      <input type="text" class="input-field" placeholder="Team Leader's Full Name" required>
+      <input type="tel" class="input-field" placeholder="Phone Number" required pattern="[0-9]{10}">
+      <input type="email" class="input-field" placeholder="Email Address" required>
+      <textarea class="input-field" placeholder="Team Members (Optional - Names separated by commas)"></textarea>
+      <button type="submit" class="submit-btn">Submit Registration</button>
+    </form>
+
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </div>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Registration submitted! You will receive a confirmation soon.");
+      // Here you would handle form submission (e.g., send to server)
+    }
+  </script>
+
+</body>
+</html>
